@@ -1,0 +1,40 @@
+using all.py
+
+SOURCE_CALIBRATION = Four small cylindrical camera calibration images
+SOURCE = Four small cylindrical images
+RESULT = Four small cylindrical perspective transformation saved location.
+SOURCE_PATH = Same as the RESULT location
+RESULT_PATH = Position of Hough circle detection for four small cylinders.
+SOURCE_PATHnew = Same as RESULT_PATH.
+PROTO_PATH = Location of deploy.prototxt.
+MODEL_PATH = Location of hed_pretrained_bsds.caffemodel
+CAMERA_PARA_PATH = location of data.xlsx
+IMG_PATH = Image compression archive
+OUTPUT = The output results are saved in the location of result.xlsx.
+
+
+Questions：
+小圆柱正确中心坐标的确定(棋盘格上哪个点：第一个输出）？以及坐标往哪里为正
+图片的意思
+四小圆柱误差分析
+
+需不需要标定部分？为什么标定出来的数据不可以
+4格_亚克力板_新.xlsx能不能cover所有图片？
+
+结果
+1.How to determine the correct center coordinates of the small cylinders (which point on the chessboard: the first output)? And in which direction are the coordinates considered positive?
+2.Is camera calibration necessary? Why can't the calibrated data be used?
+3.Does "4格_亚克力板_新.xlsx" cover all the images?
+4.（qs：是否大圆（5，3），小圆（5，1））
+
+Results:
+Small cylinder center coordinates:
+a. Calculated results
+b. Reference results (5,1) (chessboard position)
+c. Calculation of the error compared to the reference results (in millimeters)
+
+Large circle center coordinates:
+a. Calculated results
+b. Reference results
+c. Error between the two (in millimeters)
+
